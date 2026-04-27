@@ -79,6 +79,17 @@ database:
   database: ""
   root_password: ""
 
+service:
+  # -- Service annotations
+  annotations: {}
+  # -- Service type
+  type: ClusterIP
+  # -- Service ipFamilies
+  ipFamilies:
+  - IPv4
+  # -- Service ipFamilyPolicy SingleStack|PreferDualStack|RequireDualStack
+  ipFamilyPolicy: SingleStack
+
 # -- Allowing use of ingress controllers
 # https://kubernetes.io/docs/concepts/services-networking/ingress/
 ingress:

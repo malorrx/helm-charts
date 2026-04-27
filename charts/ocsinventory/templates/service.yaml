@@ -4,7 +4,17 @@ metadata:
   name: {{ template "ocsinventory.fullname" . }}
   labels:
     {{- include "ocsinventory.labels" . | nindent 4 }}
+  {{- with .Values.service.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 spec:
+  type: {{ .Values.service.type }}
+  ipFamilies:
+    {{- with .Values.service.ipFamilies }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+  ipFamilyPolicy: {{ .Values.service.ipFamilyPolicy }}
   ports:
     - port: 80
       targetPort: http
@@ -12,7 +22,6 @@ spec:
       name: http
   selector:
     {{- include "ocsinventory.selectorLabels" . | nindent 4 }}
-
 {{- if .Values.metrics.enabled }}
 ---
 apiVersion: v1
