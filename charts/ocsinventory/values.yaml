@@ -23,12 +23,12 @@ deployment:
 # -- Image pull secrets
 imagePullSecrets: []
 
-# Override the name of the application
+# -- Override the name of the application
 nameOverride: ""
-# Override the full name of the application
+# -- Override the full name of the application
 fullnameOverride: ""
 
-# -- Extra nvironment
+# -- Extra environment
 extraEnv: []
 
 # -- Pod annotations
@@ -45,7 +45,6 @@ phpconfig:
 
 # -- Enable persistence using Persistent Volume Claims
 # https://kubernetes.io/docs/concepts/storage/persistent-volumes/
-#
 persistence:
   # -- Persistence enabled
   enabled: false
