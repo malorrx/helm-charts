@@ -45,8 +45,9 @@ Open Computers and Software Inventory Next Generation is an assets management an
 | image.repository | string | `"ocsinventory/ocsinventory-docker-image"` | Image repository |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets | list | `[]` | Image pull secrets |
-| ingress | object | `{"annotations":{"cert-manager.io/cluster-issuer":"","kubernetes.io/ingress.class":"nginx","nginx.ingress.kubernetes.io/app-root":"/ocsreports/","nginx.ingress.kubernetes.io/force-ssl-redirect":"true","nginx.ingress.kubernetes.io/proxy-body-size":"200M","nginx.ingress.kubernetes.io/proxy-connect-timeout":"300s","nginx.ingress.kubernetes.io/proxy-read-timeout":"300s","nginx.ingress.kubernetes.io/proxy-send-timeout":"300s"},"basicauth":{"authRealm":"Authentication Required","enabled":false,"password":"","paths":["/ocsapi","/ocsinventory"],"username":""},"enabled":true,"hosts":["ocsng.example.com"],"labels":{},"tls":true}` | Allowing use of ingress controllers https://kubernetes.io/docs/concepts/services-networking/ingress/ |
-| ingress.enabled | bool | `true` | Ingress enabled |
+| ingress | object | `{"annotations":{"cert-manager.io/cluster-issuer":"","kubernetes.io/ingress.class":"nginx","nginx.ingress.kubernetes.io/app-root":"/ocsreports/","nginx.ingress.kubernetes.io/force-ssl-redirect":"true","nginx.ingress.kubernetes.io/proxy-body-size":"200M","nginx.ingress.kubernetes.io/proxy-connect-timeout":"300s","nginx.ingress.kubernetes.io/proxy-read-timeout":"300s","nginx.ingress.kubernetes.io/proxy-send-timeout":"300s"},"basicauth":{"authRealm":"Authentication Required","enabled":false,"password":"","paths":["/ocsapi","/ocsinventory"],"username":""},"className":"","enabled":false,"hosts":["ocsng.example.com"],"labels":{},"tls":true}` | Allowing use of ingress controllers https://kubernetes.io/docs/concepts/services-networking/ingress/ |
+| ingress.className | string | `""` | Ingress className |
+| ingress.enabled | bool | `false` | Ingress enabled |
 | ingress.labels | object | `{}` | Ingress labels |
 | initContainers | list | `[]` | InitContainers |
 | metrics.enabled | bool | `false` | Metrics enabled |

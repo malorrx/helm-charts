@@ -163,6 +163,10 @@
                         }
                     }
                 },
+                "className": {
+                    "description": "Ingress className",
+                    "type": "string"
+                },
                 "enabled": {
                     "description": "Ingress enabled",
                     "type": "boolean"
