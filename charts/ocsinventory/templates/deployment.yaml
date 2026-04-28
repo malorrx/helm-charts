@@ -25,6 +25,7 @@ spec:
         {{ toYaml .Values.podAnnotations | indent 8 }}
       {{- end }}
     spec:
+      serviceAccountName: {{ include "ocsinventory.serviceAccountName" . }}
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
