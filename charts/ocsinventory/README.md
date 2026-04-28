@@ -1,6 +1,6 @@
 # ocsinventory
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.12.4](https://img.shields.io/badge/AppVersion-2.12.4-informational?style=flat-square)
+![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.12.4](https://img.shields.io/badge/AppVersion-2.12.4-informational?style=flat-square)
 
 Open Computers and Software Inventory Next Generation is an assets management and deployment solution.
 
@@ -14,7 +14,7 @@ Open Computers and Software Inventory Next Generation is an assets management an
 
 ## Source Code
 
-* <http://wiki.ocsinventory-ng.org>
+* <https://wiki.ocsinventory-ng.org>
 * <https://github.com/OCSInventory-NG/OCSInventory-Docker-Image>
 
 ## Values
@@ -67,7 +67,6 @@ Open Computers and Software Inventory Next Generation is an assets management an
 | persistence.size | string | `"1Gi"` | PersistentVolumeClaim size. If persistence=false the size is used by an emptyDir |
 | persistence.storageClass | string | `""` | Set storage class here |
 | phpconfig | object | `{"ocsinventory":"upload_max_filesize = 200M\npost_max_size = 201M\nmax_execution_time = -1\nmax_input_time = -1\n"}` | PHP configuration https://www.php.net/manual/ini.core.php |
-| podAnnotations | object | `{}` | Pod annotations |
 | podAnnotations | object | `{}` | Pod annotations |
 | podSecurityContext | object | `{}` | Pod security context |
 | resources | object | `{"limits":{"cpu":"200m","memory":"512Mi"},"requests":{"cpu":"100m","memory":"256Mi"}}` | Ressources limits and requests for the container https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/ |

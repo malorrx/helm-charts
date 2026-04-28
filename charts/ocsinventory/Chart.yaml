@@ -1,7 +1,7 @@
 apiVersion: v2
 name: ocsinventory
 type: application
-version: 0.2.1
+version: 0.2.2
 appVersion: "2.12.4"
 description: Open Computers and Software Inventory Next Generation is an assets management and deployment solution.
 home: https://ocsinventory-ng.org/
@@ -17,7 +17,7 @@ keywords:
 - web
 
 sources:
-- "http://wiki.ocsinventory-ng.org"
+- "https://wiki.ocsinventory-ng.org"
 - "https://github.com/OCSInventory-NG/OCSInventory-Docker-Image"
 
 maintainers:
