@@ -1,6 +1,6 @@
 # ocsinventory
 
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.12.4](https://img.shields.io/badge/AppVersion-2.12.4-informational?style=flat-square)
+![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.12.4](https://img.shields.io/badge/AppVersion-2.12.4-informational?style=flat-square)
 
 Open Computers and Software Inventory Next Generation is an assets management and deployment solution.
 
